@@ -1,0 +1,14 @@
+{
+    "win_length": 1,
+    "fig": "models/compare.png",
+    "mode": "trn",
+    "loglog": true,
+    "lcurves": [
+        "models/gelu/lcurve.out",
+        "models/tanh/lcurve.out"
+    ],
+    "labels": [
+        "gelu",
+        "tanh"
+    ]
+}
