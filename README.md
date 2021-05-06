@@ -13,6 +13,7 @@ This repository contains scripts for the construction workflow of Deep Potential
    - `loglog`: true or false, whether to change axis to log scaling
    - `lcurves`: the lcurve.out files to plot
    - `labels`: the legends for each file in `lcurves`
+   
 To generate a figure for learning curve, just run `python lcurve_plot.py plot.json`
 + `test.py`: script to evaluate energy and forces for all conformers in training data
 + `plot_err_distribution.py`: script to plot unsigned error distribution and RMSE
