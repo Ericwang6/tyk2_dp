@@ -28,6 +28,6 @@ if __name__ == "__main__":
     for lig in ligs:
         gjf_dir = f"gaussian/{lig}"
         gjfs = list(glob.glob(os.path.join(gjf_dir, "*gjf")))
-        write_pbs(gjfs, gjf_dir, batch=1000)
+        write_pbs(gjfs, gjf_dir, batch=200, submit=True)
 
     
