@@ -7,7 +7,7 @@ This repository contains scripts for the construction workflow of Deep Potential
 + `log2dp`: convert gaussian log file to deepmd format
 + `lcurve_plot.py`: script to visualize learning curve
 + `plot.json`: a sample of settings for plot learning curve, which looks like
-  `
+  ``
   {
     "win_length": 100,
     "fig": "models/compare.png",
@@ -21,7 +21,7 @@ This repository contains scripts for the construction workflow of Deep Potential
         "gelu",
         "tanh"
     ]
-}`
+}``
  - `win_length`: the window length to smooth learning curve
  - `fig`: the directory to save figure
  - `mode`: "trn" or "tst", whether to use training or testing loss in lcurve.out file
