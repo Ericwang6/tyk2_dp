@@ -34,8 +34,9 @@ if __name__ == "__main__":
     for lig in ligs:
         gro_file = f"ligands_5ns/{lig}/md_traj.gro"
         system = dpdata.System(gro_file, fmt='gromacs/gro', type_map=['H','C','N','O','Cl'])
-        # the first 1ns traj
-        for frame_idx in range(system.get_nframes() // 5):
+        # the first 0.5ns traj
+        for frame_idx in range(system.get_nframes() // 10):
             make_gaussian_input(system,
+                                frame_idx=frame_idx,
                                 fname=f"gaussian/{lig}/{frame_idx}.gjf",
                                 header="%nproc=32\n%mem=40GB\n#force wB97XD/6-31G(d)")
