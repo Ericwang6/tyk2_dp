@@ -22,6 +22,11 @@ To plot learning curves, just run `python lcurve_plot.py plot.json`
 ## data
 Training set in DeepMD-kit format
 ## models
-+ `compare.png`: a comparison between learning curves of models with tanh/gelu activation function
++ `lcurve.png`: a comparison between learning curves of models with tanh/gelu activation function
++ `lcurve_smooth.png`: curve without smoothness
 + `gelu`/`tanh`: contains `frozen_model.pb`, `lcurve.out` and `input.json` files
+## eval
++ `*/*_e.txt`: results of energy prediction
++ `*/*_f.txt`: results of force prediction
++ `error_distribution.png`: error distribution plot
 
