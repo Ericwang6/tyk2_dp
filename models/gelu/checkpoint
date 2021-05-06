@@ -1,0 +1,2 @@
+model_checkpoint_path: "/data1/anguse/yingze/tyk2-wB97XD/models/gelu/model.ckpt"
+all_model_checkpoint_paths: "/data1/anguse/yingze/tyk2-wB97XD/models/gelu/model.ckpt"

@@ -1,0 +1,8 @@
+#!/bin/bash
+#PBS -N tyk2-wB97XD
+#PBS -q T4_16_62
+#PBS -l select=1:ncpus=16:ngpus=1
+source activate deepmd-kit-b30c09e
+cd $PBS_O_WORKDIR
+dp train input.json
+dp freeze -o frozen_model.pb
